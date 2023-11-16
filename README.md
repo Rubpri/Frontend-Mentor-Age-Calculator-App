@@ -13,3 +13,6 @@ This is a solution to the [Results age calculator app challenge on Frontend Ment
 - Mobile-first workflow
 - JavaScript
 - React.js
+
+![desktop](desktop.jpg)
+![mobile](mobile.jpg)
