@@ -1,38 +1,198 @@
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 94%);
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20% auto;
+  width: 92%;
+  border-radius: 10px;
+  border-bottom-right-radius: 120px;
+  padding: 12% 0;
+}
+
+.App-center {
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.day-month-year {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.day {
+  width: 30%;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+
+.day label {
+  font-size: 13px;
+}
+
+.day input {
+  width: 85%;
+  font-weight: 700;
+  font-size: 150%;
+  border: 1px solid hsl(0, 0%, 86%);
+  padding: 7%;
+  border-radius: 5px;
+}
+
+.month {
+  width: 30%;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+
+.month label {
+  font-size: 13px;
+}
+
+.month input {
+  width: 85%;
+  font-weight: 700;
+  font-size: 150%;
+  border: 1px solid hsl(0, 0%, 86%);
+  padding: 7%;
+  border-radius: 5px;
+}
+
+.year {
+  width: 30%;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+
+.year label {
+  font-size: 13px;
+}
+
+.year input {
+  width:85%;
+  font-weight: 700;
+  font-size: 150%;
+  border: 1px solid hsl(0, 0%, 86%);
+  padding: 7%;
+  border-radius: 5px;
+}
+
+.separator {
+  position: relative; 
+  width: 100%;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.separator i {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  color: hsl(259, 100%, 65%);
+  font-size: 50px;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.result {
+  font-style: italic;
+  margin-top: 15%;
+  font-size: 50px;
+}
+
+.result h4 {
+  margin: -18px 0;
+  
+}
+
+.result span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 630px) {
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App {
+    padding: 5% 0;
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .separator {
+    margin-top: 10%;
+    margin-bottom: 0;
+    text-align: end;
+    align-items: end;
+    justify-content: end;
   }
+
+  .result {
+    margin-top: 10%;
+    font-size: 60px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .App {
+    padding: 3% 0;
+    width: 60%;
+    margin-top: 150px;
+  }
+
+  .day-month-year {
+    width: 70%;
+  }
+
+  .separator {
+    margin-top: 7%;
+    margin-bottom: 0;
+    text-align: end;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .separator i {
+    font-size: 70px;
+  }
+
+  .result {
+    margin-top: 7%;
+    font-size: 80px;
+  }
+
 }
